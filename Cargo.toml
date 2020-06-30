@@ -1,0 +1,30 @@
+[package]
+
+name = "phasespace"
+description = "Transform and inspect .egsphsp files"
+authors = ["stevan pecic <stevan.pecic@icloud.com>"]
+license = "MIT"
+version = "0.0.1"
+
+
+documentation = "https://github.com/stevanpecic"
+homepage = "https://github.com/stevanpecic"
+repository = "https://github.com/stevanpecic"
+
+readme = "README.rst"
+keywords = ["egsphsp", "phaser", "twist", "shout", "egsnrc"]
+
+[dependencies]
+byteorder = "0.5"
+clap = "2"
+float-cmp = "0.2"
+rand = "0.3"
+cpu-time = "1.0.0"
+
+[lib]
+name = "egsphsp"
+path = "src/lib.rs"
+
+[[bin]]
+name = "phasespace"
+path = "src/bin.rs"
